@@ -1,4 +1,4 @@
-package com.curso.springboot.learnspringboot;
+package com.curso.springboot.learnspringboot.entity;
 
 public class Course {
     private long id;

@@ -1,4 +1,4 @@
-package com.curso.springboot.learnspringboot;
+package com.curso.springboot.learnspringboot.configuration;
 
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
