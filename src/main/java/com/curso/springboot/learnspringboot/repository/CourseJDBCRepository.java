@@ -10,10 +10,12 @@ import org.springframework.stereotype.Repository;
 @Repository
 public class CourseJDBCRepository {
 
-    @Autowired
+
     private JdbcTemplate springJdbcTemplate;
 
-
+    public CourseJDBCRepository(JdbcTemplate springJdbcTemplate) {
+        this.springJdbcTemplate = springJdbcTemplate;
+    }
 
     private static String INSERT_QUERY=
             """
