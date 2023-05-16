@@ -3,6 +3,7 @@ package com.curso.springboot.learnspringboot.runner;
 import com.curso.springboot.learnspringboot.entity.Course;
 import com.curso.springboot.learnspringboot.repository.CourseJDBCRepository;
 import com.curso.springboot.learnspringboot.repository.CourseJPARepository;
+import com.curso.springboot.learnspringboot.repository.CourseSpringJPARepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -14,16 +15,20 @@ public class CourseCommandLineRunner implements CommandLineRunner {
 
     private CourseJPARepository repositoryJPA;
 
-    public CourseCommandLineRunner(CourseJDBCRepository repositoryJDBC, CourseJPARepository repositoryJPA) {
+    private CourseSpringJPARepository repositorySpringJPA;
+
+    public CourseCommandLineRunner(CourseJDBCRepository repositoryJDBC, CourseJPARepository repositoryJPA, CourseSpringJPARepository repositorySpringJPA) {
         this.repositoryJDBC = repositoryJDBC;
         this.repositoryJPA = repositoryJPA;
+        this.repositorySpringJPA = repositorySpringJPA;
     }
 
     @Override
     public void run(String... args) throws Exception {
 
             //runJDBC();
-            runJPA();
+            //runJPA();
+            runSpringJpa();
 
     }
 
@@ -46,5 +51,15 @@ public class CourseCommandLineRunner implements CommandLineRunner {
         repositoryJPA.deleteById(2);
 
         System.out.println(repositoryJPA.findById(1));
+    }
+
+    public void runSpringJpa(){
+        repositorySpringJPA.save(new Course(1, "testJPA1", "testAuthor1"));
+        repositorySpringJPA.save(new Course(2, "testJPA2", "testAuthor2"));
+        repositorySpringJPA.save(new Course(3, "testJPA3", "testAuthor3"));
+
+        repositorySpringJPA.deleteById(2L);
+
+        System.out.println(repositorySpringJPA.findById(1L));
     }
 }
