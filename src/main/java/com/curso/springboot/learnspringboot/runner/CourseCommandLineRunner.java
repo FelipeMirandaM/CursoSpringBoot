@@ -28,7 +28,7 @@ public class CourseCommandLineRunner implements CommandLineRunner {
 
             //runJDBC();
             //runJPA();
-            runSpringJpa();
+            //runSpringJpa();
 
     }
 
@@ -61,5 +61,9 @@ public class CourseCommandLineRunner implements CommandLineRunner {
         repositorySpringJPA.deleteById(2L);
 
         System.out.println(repositorySpringJPA.findById(1L));
+
+        System.out.println(repositorySpringJPA.findAll());
+        System.out.println(repositorySpringJPA.findByAuthor("testAuthor3"));
+        System.out.println(repositorySpringJPA.findByName("testJPA1"));
     }
 }
