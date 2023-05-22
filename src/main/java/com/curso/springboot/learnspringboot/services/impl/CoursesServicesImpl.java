@@ -1,8 +1,8 @@
-package com.curso.springboot.learnspringboot.service.impl;
+package com.curso.springboot.learnspringboot.services.impl;
 
 
-import com.curso.springboot.learnspringboot.entity.Course;
-import com.curso.springboot.learnspringboot.service.ICoursesService;
+import com.curso.springboot.learnspringboot.models.Course;
+import com.curso.springboot.learnspringboot.services.ICoursesService;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;

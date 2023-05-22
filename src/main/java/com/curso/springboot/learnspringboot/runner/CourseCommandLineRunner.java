@@ -1,9 +1,9 @@
 package com.curso.springboot.learnspringboot.runner;
 
-import com.curso.springboot.learnspringboot.entity.Course;
-import com.curso.springboot.learnspringboot.repository.CourseJDBCRepository;
-import com.curso.springboot.learnspringboot.repository.CourseJPARepository;
-import com.curso.springboot.learnspringboot.repository.CourseSpringJPARepository;
+import com.curso.springboot.learnspringboot.models.Course;
+import com.curso.springboot.learnspringboot.repositories.CourseJDBCRepository;
+import com.curso.springboot.learnspringboot.repositories.CourseJPARepository;
+import com.curso.springboot.learnspringboot.repositories.CourseSpringJPARepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 

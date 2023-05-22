@@ -1,8 +1,6 @@
-package com.curso.springboot.learnspringboot.repository;
+package com.curso.springboot.learnspringboot.repositories;
 
-import com.curso.springboot.learnspringboot.entity.Course;
-import org.springframework.beans.factory.BeanClassLoaderAware;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.curso.springboot.learnspringboot.models.Course;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;

@@ -1,4 +1,4 @@
-package com.curso.springboot.learnspringboot.controller;
+package com.curso.springboot.learnspringboot.controllers;
 
 import com.curso.springboot.learnspringboot.configuration.CurrencyServiceConfiguration;
 import org.springframework.beans.factory.annotation.Autowired;

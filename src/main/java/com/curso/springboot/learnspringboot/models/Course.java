@@ -1,4 +1,4 @@
-package com.curso.springboot.learnspringboot.entity;
+package com.curso.springboot.learnspringboot.models;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;

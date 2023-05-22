@@ -1,6 +1,6 @@
-package com.curso.springboot.learnspringboot.repository;
+package com.curso.springboot.learnspringboot.repositories;
 
-import com.curso.springboot.learnspringboot.entity.Course;
+import com.curso.springboot.learnspringboot.models.Course;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 import jakarta.transaction.Transactional;
