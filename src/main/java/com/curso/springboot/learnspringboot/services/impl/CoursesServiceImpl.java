@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Service
-public class CoursesServicesImpl implements ICoursesService {
+public class CoursesServiceImpl implements ICoursesService {
     @Override
     public List<Course> getAllCourses() {
         List<Course> listCourses = new ArrayList<>();

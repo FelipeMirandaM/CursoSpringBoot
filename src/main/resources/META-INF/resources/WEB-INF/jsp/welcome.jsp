@@ -1,10 +1,6 @@
-<html>
-<head><title>Welcome page</title></head>
-
-<body>
-<div>Welcome!</div>
-<div>Your name: ${name}</div>
-<div>Your password: ${password}</div>
-
-</body>
-</html>
+<%@ include file="common/header.jspf" %>
+<%@ include file="common/navigation.jspf" %>
+<div class="container">
+    <h1>Welcome! ${name}</h1>
+</div>
+<%@ include file="common/footer.jspf" %>
