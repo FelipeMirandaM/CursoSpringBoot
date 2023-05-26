@@ -17,4 +17,6 @@ public interface ITodoService {
     public Todo findById(int id);
 
     public void updateTodo(Todo todo);
+
+    public List<Todo> findByUsername(String username);
 }
